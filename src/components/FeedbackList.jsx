@@ -14,13 +14,14 @@ function FeedbackList({ feedback, handleDelete }) {
   //     </div>
   //   );
   // }
+
   return (
     <div className='feedback-list'>
       <AnimatePresence>
         {feedback.map((item) => (
           <motion.div
             key={item.id}
-            inital={{ opacity: 0 }}
+            initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
